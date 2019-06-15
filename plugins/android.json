@@ -1,0 +1,44 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-appavailability": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-cszbar": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-wechat": {
+      "WECHATAPPID": "wxacf2748e65b13188",
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    },
+    "cordova-plugin-qqsdk": {
+      "QQ_APP_ID": "1107765781",
+      "PACKAGE_NAME": "com.kpxn.rongEchong"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.kpxn.rongEchong" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Permissions">
+        <param name="android-package" value="com.android.plugins.Permissions" />
+    </feature>
+    <feature name="AppAvailability">
+        <param name="android-package" value="com.ohh2ahh.appavailability.AppAvailability" />
+    </feature>
+    <feature name="CsZBar">
+        <param name="android-package" value="org.cloudsky.cordovaPlugins.ZBar" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
+    <feature name="Wechat">
+        <param name="android-package" value="xu.li.cordova.wechat.Wechat" />
+    </feature>
+    <feature name="YCQQ">
+        <param name="android-package" value="org.zy.yuancheng.qq.YCQQ" />
+    </feature>
+    <access origin="https://openmobile.qq.com/*" />
+    <access origin="http://qzonestyle.gtimg.cn/*" />
+    <access origin="http://pub.idqqimg.com/*" />
+    <access origin="http://qzs.qq.com/*" />
+    <access origin="http://m.qzone.com/*" />
+    <access origin="http://*.ptlogin2.qq.com/*" />
+    <access origin="http://*.qq.com/*" />
+    <access origin="http://q2.qlogo.cn/*" />
+    <name>蓉E充</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="bdapp://*/*" />
+    <allow-intent href="baidumap://*/*" />
+    <allow-intent href="iosamap://*/*" />
+    <allow-intent href="androidamap://*/*" />
+    <allow-intent href="amapuri://*/*" />
+    <config-file parent="LSApplicationQueriesSchemes" target="*-Info.plist">
+        <array>
+            <string>iosamap</string>
+            <string>baidumap</string>
+        </array>
+    </config-file>
+    <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+        <string>App需要您的同意,才能在使用期间访问位置用于查找附近充电站</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>App需要您的同意,才能访问相机用于扫码充电</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+        <string>App需要您的同意,才能访问相册用于扫码充电</string>
+    </edit-config>
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icon/android/100.png" />
+    <icon density="mdpi" src="res/icon/android/100.png" />
+    <icon density="hdpi" src="res/icon/android/100.png" />
+    <icon density="xhdpi" src="res/icon/android/100.png" />
+    <icon density="xxhdpi" src="res/icon/android/100.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="WECHATAPPID" value="wxacf2748e65b13188" />
+    <preference name="QQ_APP_ID" value="1107765781" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenDelay" value="0" />
+</widget>

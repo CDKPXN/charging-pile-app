@@ -1,0 +1,45 @@
+{
+  "name": "com.kpxn.rongechong",
+  "displayName": "rongEchong",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^7.1.4",
+    "cordova-plugin-android-permissions": "^1.0.0",
+    "cordova-plugin-appavailability": "^0.4.2",
+    "cordova-plugin-cszbar": "^1.3.4",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-qqsdk": "git+https://github.com/zzhDmon/cordova_qq.git",
+    "cordova-plugin-wechat": "^2.1.0",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-plugin-x-toast": "^2.7.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-appavailability": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-cszbar": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-wechat": {
+        "WECHATAPPID": "wxacf2748e65b13188"
+      },
+      "cordova-plugin-qqsdk": {
+        "QQ_APP_ID": "1107765781"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

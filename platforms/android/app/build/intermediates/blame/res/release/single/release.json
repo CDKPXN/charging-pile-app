@@ -1,0 +1,502 @@
+[
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_cszbarscanner.xml.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\layout\\cszbarscanner.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_config.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_icon.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-ldpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-ldpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-ldpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_camera_flash.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-hdpi\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-hdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xxhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_icon.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_camera_flash.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_camera_flash.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xhdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-hdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-hdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-hdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-hdpi\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_camera_flash.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-ldpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_icon.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_cszbarscanner.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\layout\\cszbarscanner.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_cszbarscanner.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\layout\\cszbarscanner.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_cszbarscanner.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\layout\\cszbarscanner.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_config.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xxhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-hdpi\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xxhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_camera_flash.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_camera_flash.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xxhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_config.xml.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_config.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-ldpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-xxhdpi\\camera_flash.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-mdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-ldpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-ldpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_cszbarscanner.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\layout\\cszbarscanner.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-hdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-mdpi_screen.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_config.xml.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-mdpi_screen.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-dev\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_icon.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-ldpi\\camera_flash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_icon.png.flat",
+        "source": "C:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_camera_flash.png.flat",
+        "source": "E:\\liDes\\Java\\idealWorkPlace\\package-test\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\camera_flash.png"
+    }
+]
