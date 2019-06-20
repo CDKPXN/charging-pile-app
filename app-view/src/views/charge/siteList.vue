@@ -435,7 +435,6 @@ export default {
       }).then(res => {
         if (res.data.code == 200) {
           vm.data = res.data.data;
-          console.log('aaa',vm.data)
           vm.data.map(item => {
             vm.center.lng = item.longitude;
             vm.center.lat = item.latitude;
@@ -478,31 +477,18 @@ export default {
                  
       });
     },
-    //  test(){
-    //    let vm=this;
-    //                vm.data.sort(compare("distance"));
-    //                vm.searchArr = vm.data;            
-    //         },
-    // async(){
-    //   let vm=this;
-    //             for(let i=0;i<vm.data.length;i++){
-    //           if(vm.data[i].fid!==null){            
-    //           vm.$ajax({
-    //            method:'get',
-    //            url:'file/record/'+vm.data[i].fid,
-    //            headers: { token: sessionStorage.getItem("token") }
-    //             }).then(res=>{
-    //              if(res.data.code==200){
-    //              vm.data[i].src=url.LOCALSRC+'/'+res.data.data.rname;  
-              
-    //              }
-    //               })
-    //               }else{
-    //              vm.data[i].src=url.LOCALSRC+'/'+'no_img.jpg';
-    //             }          
-    //           }
-    //            this.test();
-    //       } ,           
+   
+    async(){
+      return new Promise(function(resolve,reject){
+             setTimeout(function(){
+               console.log('settoimrout')
+             },2000)
+             resolve();
+      }).then(function(){
+        console.log('异步完成')
+      })
+    }   
+  
   },
   created() {
     let vm = this;
@@ -510,7 +496,7 @@ export default {
       "(" + sessionStorage.getItem("autoLocationPoint") + ")"
     ); // JSON字符串转JSON对象
     vm.getSiteList();
-    
+    this.async();
   }
 };
 </script>
