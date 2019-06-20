@@ -78,16 +78,14 @@
     </group>
  
     <x-button
-      @click.native="modifyPassword()"
-      type="primary"
-    
-      style="border-radius:99px;width:90%;margin:4% 0 0 5%;"
+      @click.native="modifyPassword()" 
+      style="border-radius:99px;width:90%;margin:4% 0 0 5%;color:#fff"
         class="xButton"
     >立即注册</x-button>
 
     <div class="agreement" type="plain" style="width:90%;margin:4% 0 0 5%;">
       <a style="font-size:10px;color:#BFBFBF">注册即代表您同意</a>
-      <a style="font-size:10px;color:#4EBB6A">《充电桩APP用户使用协议》</a>
+      <a style="font-size:10px;color:#4EBB6A" @click="jump('/home/registerProtocol')" >《充电桩APP用户使用协议》</a>
     </div>
 
     <toast v-model="toastShow.showCancel" type="cancel">{{toastShow.cancel_msg}}</toast>
@@ -198,7 +196,7 @@ export default {
     },
     modifyPassword() {
       let vm = this;
-      if (vm.inputphone != vm.phone) {
+      if (vm.inputphone !== vm.phone) {
         vm.toastShow.cancel_msg = "手机号码已更换 请重新发送验证码";
         vm.toastShow.showCancel = true;
       } else if (vm.smsCode == "") {

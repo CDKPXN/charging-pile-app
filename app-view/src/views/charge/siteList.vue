@@ -36,7 +36,7 @@
                 style="width:100px"
                 width="100px"
                 height="100px"
-                :src="src"
+                :src='item.src'
                 alt
               >
             </div>
@@ -152,6 +152,7 @@ export default {
       searchSite: "",
       searchArr: [],
       src:''
+      
     };
   },
   watch: {
@@ -434,9 +435,16 @@ export default {
       }).then(res => {
         if (res.data.code == 200) {
           vm.data = res.data.data;
+          console.log('aaa',vm.data)
           vm.data.map(item => {
             vm.center.lng = item.longitude;
             vm.center.lat = item.latitude;
+            if(item.src!==null){
+               item.src=url.LOCALSRC+'/'+item.src;
+            }else{
+               item.src=url.LOCALSRC+'/'+'no_img.jpg';
+            }
+           
             var distance = vm.GetDistance(
               vm.center.lat,
               vm.center.lng,
@@ -465,10 +473,36 @@ export default {
             };
           };
           vm.data.sort(compare("distance"));
-          vm.searchArr = vm.data;
+          vm.searchArr = vm.data;     
         }
+                 
       });
-    }
+    },
+    //  test(){
+    //    let vm=this;
+    //                vm.data.sort(compare("distance"));
+    //                vm.searchArr = vm.data;            
+    //         },
+    // async(){
+    //   let vm=this;
+    //             for(let i=0;i<vm.data.length;i++){
+    //           if(vm.data[i].fid!==null){            
+    //           vm.$ajax({
+    //            method:'get',
+    //            url:'file/record/'+vm.data[i].fid,
+    //            headers: { token: sessionStorage.getItem("token") }
+    //             }).then(res=>{
+    //              if(res.data.code==200){
+    //              vm.data[i].src=url.LOCALSRC+'/'+res.data.data.rname;  
+              
+    //              }
+    //               })
+    //               }else{
+    //              vm.data[i].src=url.LOCALSRC+'/'+'no_img.jpg';
+    //             }          
+    //           }
+    //            this.test();
+    //       } ,           
   },
   created() {
     let vm = this;
@@ -476,7 +510,7 @@ export default {
       "(" + sessionStorage.getItem("autoLocationPoint") + ")"
     ); // JSON字符串转JSON对象
     vm.getSiteList();
-    this.src=url.LOCALSRC+'/site01.jpg';
+    
   }
 };
 </script>

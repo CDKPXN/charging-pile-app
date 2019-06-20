@@ -1,4 +1,4 @@
-#Thu Jun 13 16:03:10 CST 2019
-base.0=C\:\\Users\\Administrator\\Desktop\\charging_pile\\test\\master\\charging_pile_app\\rongEchong\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+#Wed Jun 19 17:17:23 CST 2019
+base.0=D\:\\Git\\charging-pile-app\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
 path.0=classes.dex
 renamed.0=classes.dex

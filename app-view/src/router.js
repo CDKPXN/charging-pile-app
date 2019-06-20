@@ -81,6 +81,7 @@ var router = new Router({
         { path: '/home/user/appCash', component: require('./views/mine/recharge/appCash.vue') }, // 选择充值方式 
         { path: '/home/user/rechargeProtocol', component: require('./views/mine/recharge/rechargeProtocol.vue') }, // 充值协议
         { path: '/home/user/invoiceProtocol', component: require('./views/mine/invoice/invoiceProtocol.vue') }, // 不知道啥协议
+      
         { path: '/home/user/appCash/chooseRedEnvelopes', component: require('./views/mine/recharge/redEnvelopes/chooseRedEnvelopes.vue') }, // 选择充值方式 
         { path: '/home/set/index', component: require('./views/mine/set/index.vue') },  // 设置主页
         { path: '/home/about/index', component: require('./views/mine/about/index.vue') },  // 关于我们

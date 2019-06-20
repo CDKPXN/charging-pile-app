@@ -280,7 +280,7 @@ export default {
      
     };
   },
-  //设置缓存
+  //设置缓存不让当前地图刷新
   beforeRouteEnter(to, from, next) { 
       if(from.name=='tabDetails'){
           to.meta.isBack=true;

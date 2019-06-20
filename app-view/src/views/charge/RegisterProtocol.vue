@@ -280,7 +280,7 @@
 </template>
 <script>
 import { XButton,CheckIcon  } from "vux";
-
+ let backpage
 export default {
   components: {
     XButton,
@@ -290,9 +290,14 @@ export default {
     return {
       height: "0px",
       footHeight: "0px",
-      isagree:false
+      isagree:false,
+      backpage:''
     };
   },
+ beforeRouteEnter(to, from, next) { 
+       backpage=from.path;
+       next();//必须打开 否则无法进行下一步
+    },
   methods: {
     // cancle() {
     //   this.$vux.confirm.show({
@@ -310,15 +315,25 @@ export default {
       });
       }else{
            localStorage.setItem("potocol", true);
-           this.$router.push("/home/index");
+           if(this.backpage=='/register'){
+                 this.$router.push("/register");
+           }else{
+                this.$router.push("/home/index");
+           }
+         
       }
      
     }
   }, 
   created() {
+    this.backpage=backpage;
     var potocol = localStorage.getItem("potocol");
-    if (potocol) {
-      this.$router.push("/home/index");
+    if(potocol&&this.backpage=='/register'){
+      this.isagree=true;
+    }
+    if (potocol&&this.backpage!=='/register') { 
+        this.$router.push("/home/index"); 
+        this.isagree=true;   
     }
     this.height = this.minHeight + "px";
     this.footHeight = (this.minHeight / 100) * 88 + "px";

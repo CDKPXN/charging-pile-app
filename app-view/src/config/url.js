@@ -1,7 +1,7 @@
 let domain = "http://chargingpile.companiontek.com/"
 const PLATFORM="http://192.168.0.107:8083";
-// const nomalURL="http://106.75.173.82"
-const nomalURL="http://192.168.0.117"
+const nomalURL="http://106.75.173.82"
+// const nomalURL="http://192.168.0.117"
 // const nomalURL="http://106.75.129.117"
 // const LOCALSRC = "http://106.75.166.143:8082"
 const LOCALSRC = nomalURL+":8082"

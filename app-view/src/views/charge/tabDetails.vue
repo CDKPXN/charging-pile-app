@@ -2,15 +2,15 @@
   <!-- 充电站详情 -->
   <scroller lock-x scrollbar-y :height="height">
     <div>
-      <flexbox style="display:flex;justify-content: space-between">
-        <flexbox-item >
+      <flexbox style="display:flex;justify-content:space-between">
+        <flexbox-item style="margin-left:6px;">
           <img
             style="width:100px"
             :src="src"
             alt
           >
         </flexbox-item>
-        <flexbox-item style="margin-left:-70px">
+        <flexbox-item style="margin-left:-50px">
           <div class="flex-demo">
             <span style="font-size:14px">{{name}}</span>
             <br>
@@ -29,7 +29,7 @@
       <divider>电桩状态</divider>
       <flexbox>
         <flexbox-item>
-          <div class="flex-demo msgBody">
+          <div class="flex-demo msgBody" >
             快充&nbsp;&nbsp;
             <span class="number">{{fastNum}}</span>
             &nbsp;&nbsp;
@@ -163,7 +163,7 @@ export default {
       center: { lng: 0, lat: 0 },
       distance: "",
       autoLocationPoint: { lng: 0, lat: 0 },
-      src:''
+      src:url.LOCALSRC+'/'+'no_img.jpg'
     };
   },
   watch: {
@@ -216,7 +216,7 @@ export default {
       var f = false;
       for (var j = i + 1; j < this.priceStr.length; j++) {
         if (this.priceStr[i].value == this.priceStr[j].value) {
-          console.log("xiangdeng");
+         
           this.priceStr[i].label += " " + this.priceStr[j].label;
           this.priceStr.splice(j, 1);
         }
@@ -243,11 +243,23 @@ export default {
             );
             vm.distance = distance.toFixed(2);
             item.distance = vm.distance;
+            if(item.fid!==null){
+             vm.$ajax({
+               method:'get',
+               url:'file/record/'+item.fid,
+               headers: { token: sessionStorage.getItem("token") }
+                }).then(res=>{
+              if(res.data.code==200){
+                this.src=url.LOCALSRC+'/'+res.data.data.rname;  
+              }
+               })
           }
+          }      
         });
+        
       }
     });
-    this.src=url.LOCALSRC+'/site01.jpg';
+    
   },
   methods: {
     gotoChargeList() {
@@ -432,7 +444,7 @@ export default {
         );
       s = s * 6378.137; // EARTH_RADIUS;地球半径
       s = Math.round(s * 10000) / 10000; //输出为公里
-      console.log("公里数", s); //?????????????????????????
+     
       return s;
     },
     getScheme(schemeIos, schemeAndroid) {
@@ -464,5 +476,8 @@ export default {
 }
 .xs-container {
   height: 100%;
+}
+.msgBody{
+  margin-left: 20%;
 }
 </style>

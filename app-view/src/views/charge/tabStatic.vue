@@ -4,7 +4,7 @@
             <div v-for="tmp in chargeStatic" style="height:100px;border-bottom:1px solid #cccccc">
                 <div class="tabStatic">
                     <img src="../../assets/icons/Idle.png" v-if="tmp.status==0" alt="">
-                    <img src="../../assets/icons/Idle.png" class=""v-if="tmp.status==1" alt="">
+                    <img src="../../assets/icons/Idle.png" class="" v-if="tmp.status==1" alt="">
                     <img src="../../assets/icons/Idle.png" v-if="tmp.status==2" palt="">
                     <img src="../../assets/icons/charging.png" v-if="tmp.status==3" alt="">
                     <img src="../../assets/icons/fault.png" v-if="tmp.status==4" alt="">

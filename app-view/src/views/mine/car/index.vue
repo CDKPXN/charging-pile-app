@@ -4,7 +4,7 @@
         <x-header class="xHeader" :left-options="{showBack: false}">
             <!--  头部样式 -->
             <!-- <x-icon type="ios-arrow-back" size="20" style="position:absolute;left:14px;top:14px" @click="jump('/home/mineV')"></x-icon> -->
-            <span style="color:#000">选择车型</span>
+            <span style="color:#fff">选择车型</span>
         </x-header>
         <group>
             <popup-picker :title="title" :data="list" popup-title="请选择" v-model="value" @on-show="onShow" @on-hide="onHide" @on-change="onChange" placeholder="请选择"></popup-picker>
@@ -21,10 +21,10 @@
         </div>
         <flexbox>
             <flexbox-item>
-                <x-button  type="primary" class="bottomBtn" style="border-radius:99px;height:36px;width:40%;bottom:20px;background:#1AAD19;margin-left:5%" @click.native="Choose()">确认选择</x-button>
+                <x-button  type="primary" class="bottomBtn xButton" style="border-radius:99px;height:36px;width:40%;bottom:20px;margin-left:5%" @click.native="Choose()">确认选择</x-button>
             </flexbox-item>
             <flexbox-item>
-                <x-button  type="primary" class="bottomBtn" style="border-radius:99px;height:36px;width:40%;bottom:20px;background:#1AAD19;margin-left:5%" @click.native="pass()">跳过</x-button>
+                <x-button  type="primary" class="bottomBtn xButton" style="border-radius:99px;height:36px;width:40%;bottom:20px;margin-left:5%" @click.native="pass()">跳过</x-button>
             </flexbox-item>
         </flexbox>
     </div>

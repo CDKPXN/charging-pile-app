@@ -15,7 +15,8 @@
         <scroller  lock-x scrollbar-y :height="height">   
              <div>      
             <section>
-            <img   style="width:100%;height:200px;" :src="src1" alt="">                  
+             <a  v-if="!show1"> <img   style="width:100%;height:200px;" :src="src1" alt="" ></a>   
+              <a :href="href1"  v-if="show1"> <img   style="width:100%;height:200px;" :src="src1" alt="" ></a>                       
             </section>   
              <section   class="section2" >
                  <div @click="jump('/home/user/collection')" >
@@ -40,7 +41,8 @@
                  </div>
              </section>
               <section style="margin-top:20px" >
-                 <img    style="width:100%;height:200px;" :src="src2" alt="">
+                  <a  v-if="!show2">  <img    style="width:100%;height:200px;" :src="src2" alt=""></a>   
+                  <a :href="href2" v-if="show2">  <img    style="width:100%;height:200px;" :src="src2" alt=""></a>   
               </section>
              </div>
         </scroller>  
@@ -61,26 +63,49 @@ export default {
     mounted () {
             let Height = window.innerHeight-10
             this.height =Height+'px'
-            console.log("height",Height)
+           
         },
      data(){
             return{
               height:'',
               value:'',
               src1:'',
-              src2:''
+              src2:'',
+              href1:'',
+              href2:'',
+              show1:false,
+              show2:false
             }
         },
         created(){
        let vm=this;
        vm.$ajax({
               method:'get',
-              url:"/file/record",
+              url:"/file/record/1",
               headers:{'token':sessionStorage.getItem('token')},
                }).then(res=>{
-                    if(res.data.code==200){
-                      this.src1=url.LOCALSRC+'/'+res.data.data[0].name;
-                      this.src2=url.LOCALSRC+'/'+res.data.data[1].name;
+                    if(res.data.code==200){ 
+                      if(res.data.data.href!==''||null){
+                          this.show1=true;
+                          this.href1=res.data.data.href;
+                      }                    
+                      this.src1=url.LOCALSRC+'/'+res.data.data.rname;
+                      
+                    }
+                })
+          
+           vm.$ajax({
+              method:'get',
+              url:"/file/record/2",
+              headers:{'token':sessionStorage.getItem('token')},
+               }).then(res=>{
+                    if(res.data.code==200){  
+                        if(res.data.data.href!==''||null){
+                            this.show2=true;
+                            this.href2=res.data.data.href;  
+                        }             
+                      
+                     this.src2=url.LOCALSRC+'/'+res.data.data.rname;
                     }
                 })
         },

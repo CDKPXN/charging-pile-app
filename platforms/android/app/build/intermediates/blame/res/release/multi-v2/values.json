@@ -1,6 +1,28 @@
 {
     "logs": [
         {
+            "outputFile": "D:\\Git\\charging-pile-app\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Git\\charging-pile-app\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "9,8,7,4,2,6,5,3",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "495,431,374,155,55,279,219,96",
+                        "endColumns": "57,63,56,63,40,94,59,58",
+                        "endOffsets": "548,490,426,214,91,369,274,150"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,177,234,298,339,434,494",
+                        "endColumns": "57,63,56,63,40,94,59,58",
+                        "endOffsets": "108,172,229,293,334,429,489,548"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "E:\\liDes\\Java\\idealWorkPlace\\front_end_of_charging_pile\\rongEchong\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
