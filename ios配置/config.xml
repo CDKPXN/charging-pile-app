@@ -79,6 +79,9 @@
     <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
         <string>App需要您的同意,才能在使用期间访问位置用于查找附近充电站</string>
     </edit-config>
+	 <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysUsageDescription">
+	    <string>App需要您的同意,才能在使用期间访问位置用于查找附近充电站</string>
+    </edit-config>
     <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
         <string>App需要您的同意,才能访问相机用于扫码充电</string>
     </edit-config>
