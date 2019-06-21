@@ -15,20 +15,6 @@
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
     </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Toast">
-        <param name="android-package" value="nl.xservices.plugins.Toast" />
-    </feature>
-    <feature name="Wechat">
-        <param name="android-package" value="xu.li.cordova.wechat.Wechat" />
-    </feature>
     <feature name="YCQQ">
         <param name="android-package" value="org.zy.yuancheng.qq.YCQQ" />
     </feature>
@@ -40,6 +26,20 @@
     <access origin="http://*.ptlogin2.qq.com/*" />
     <access origin="http://*.qq.com/*" />
     <access origin="http://q2.qlogo.cn/*" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Wechat">
+        <param name="android-package" value="xu.li.cordova.wechat.Wechat" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
     <name>蓉E充</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -82,8 +82,8 @@
     <icon density="xhdpi" src="res/icon/android/100.png" />
     <icon density="xxhdpi" src="res/icon/android/100.png" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="WECHATAPPID" value="wxacf2748e65b13188" />
     <preference name="QQ_APP_ID" value="1107765781" />
+    <preference name="WECHATAPPID" value="wxacf2748e65b13188" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashScreenDelay" value="0" />
 </widget>

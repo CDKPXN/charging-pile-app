@@ -4,7 +4,7 @@
         <x-header class="xHeader" :left-options="{showBack: false}">
             <x-icon type="ios-arrow-back" size="20" style="position:absolute;left:14px;top:14px" @click.native="jump('/home/mineV')"></x-icon>
             <span  style="color:#fff">充电订单</span>
-            <!-- <a slot="right" style="color:#fff;font-size:14px;" @click="jump('/home/invoice/invoiceInformation')">开发票</a> -->
+            <a slot="right" style="color:#fff;font-size:14px;" @click="jump('/home/invoice/invoiceInformation')">开发票</a>
         </x-header>
         <div style="position:relative" v-if="isTrue">
             <div style="position:absolute;margin-top:30%;left:50%;margin-left:-125px;">

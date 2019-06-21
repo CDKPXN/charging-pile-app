@@ -478,16 +478,7 @@ export default {
       });
     },
    
-    async(){
-      return new Promise(function(resolve,reject){
-             setTimeout(function(){
-               console.log('settoimrout')
-             },2000)
-             resolve();
-      }).then(function(){
-        console.log('异步完成')
-      })
-    }   
+    
   
   },
   created() {
@@ -496,7 +487,6 @@ export default {
       "(" + sessionStorage.getItem("autoLocationPoint") + ")"
     ); // JSON字符串转JSON对象
     vm.getSiteList();
-    this.async();
   }
 };
 </script>
