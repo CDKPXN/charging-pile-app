@@ -98,11 +98,12 @@
           this.height = window.screen.height-53
           console.log(this.height)
           var token = localStorage.getItem('token')
-          console.log('token: ' + token)
+          // console.log('token: ' + token)
           if(token != null){
             console.log("set token")
             sessionStorage.setItem('token',token)
           }
+          
         }
     }
 </script>

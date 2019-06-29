@@ -6,16 +6,16 @@
             <span style="color:#fff">我的</span>
         </x-header>
         <!-- 已登录的显示 -->
-        <div class="user_card" @click="GotoInfo" v-show="showUserMsg">
-            <flexbox style="display;flex;">
+        <div class="user_card"  v-show="showUserMsg">
+            <flexbox style="display;flex;" >
                 <flexbox-item class="center">
                     <div>
-                        <img src="../../assets/user.jpg" class="user_img" alt="暂无图片">
+                        <img src="../../assets/user.jpg" class="user_img" alt="暂无图片"  @click="GotoInfo">
                     </div>
                 </flexbox-item>
-                <flexbox-item class="center">
+                <flexbox-item class="center" >
                     <div>
-                        <span style="float: left;padding-top: 30px;margin-left: -20%;color:#fff">{{name}}</span>
+                        <span style="float: left;padding-top: 30px;margin-left: -20%;color:#fff" @click="GotoInfo">{{name}}</span>
                     </div>
                 </flexbox-item>
             </flexbox>
@@ -30,8 +30,8 @@
                     <p style="font-size:22px">{{balance}}&nbsp;元</p>
                 </flexbox-item>
                 <flexbox-item class="center">
-                    <p  @click="hongbao()" style="font-size:22px">红包</p>
-                    <p  @click="hongbao()" style="font-size:22px">{{r_num}}&nbsp;个</p>
+                    <p  style="font-size:22px">红包</p>
+                    <p  style="font-size:22px">{{r_num}}&nbsp;个</p>
                 </flexbox-item>
             </flexbox>
         </div>
@@ -152,12 +152,12 @@
             </cell> -->
             <!-- over -->
             <Tabbar />
-
+        <toast position="bottom" type="text" v-model="showtoast">再按一次退出</toast>
         </div>
     </div>
 </template>
 <script>
-    import { Cell, Group ,Box,XButton, Flexbox, FlexboxItem, XHeader, Grid, GridItem} from 'vux'
+    import { Cell, Group ,Box,XButton, Flexbox, FlexboxItem, XHeader, Grid, GridItem,Toast} from 'vux'
     import Tabbar from "../charge/components/tabbar"
     import URL from '../../config/url.js'
     import store from '../../vuex/store.js'
@@ -166,7 +166,7 @@
 
     export default {
         components: {
-            XButton,Box,Group,Cell,Flexbox,FlexboxItem,XHeader,Grid,GridItem,Tabbar
+            XButton,Box,Group,Cell,Flexbox,FlexboxItem,XHeader,Grid,GridItem,Tabbar,Toast
         },
         data () {
             return {
@@ -178,9 +178,13 @@
                 balance:'XXX',
                 r_num:'XXX',
                 showUserMsg:false,
+                showtoast:false,
+              backClick:0,
+              time: new Date(),
             }
         },
         created () {
+            let vm=this;
             console.log(new Date())
             if(sessionStorage.getItem('token')==null){
                 this.showUserMsg = false
@@ -204,21 +208,26 @@
                 })
             }
             this.getEnvelopes()
-
+      
+            document.addEventListener("backbutton", this.EBackButton, false);
+            
+        },
+        beforeDestroy: function() {
+         document.removeEventListener("backbutton", this.EBackButton, false);
         },
         mounted () {
             console.log(new Date())
         },
         methods:{
-          hongbao(event){
-              this.$router.push('/home/user/appCash/chooseRedEnvelopes');
-              window.event? window.event.cancelBubble = true : e.stopPropagation();//组织冒泡事件       
-          },
+        //   hongbao(event){
+        //       this.$router.push('/home/user/appCash/chooseRedEnvelopes');
+        //       window.event? window.event.cancelBubble = true : e.stopPropagation();//组织冒泡事件       
+        //   },
            back(){
                this.$router.go(-1)
            },
             GotoInfo (url) {
-               
+               console.log('进来了')
                 if(sessionStorage.getItem('token')==null){
                     this.jump('/login')
                 }else{
@@ -244,6 +253,24 @@
                     }
                 })
             },
+           EBackButton() { 
+          if (this.backClick > 0 && Date.parse(new Date()) - this.time < 2000) {
+            // 不为0时
+            this.backClick = 0;
+            navigator.app.exitApp(); // app退出
+          } else {
+            this.showtoast = true; // 提示信息
+            if (Date.parse(new Date()) - this.time < 2000) {
+              // 小于2s,退出程序    
+              this.backClick++;
+            } else {
+              // 大于2s，重置时间戳，
+              this.time = Date.parse(new Date());
+              this.backClick = 0;
+            }
+          }   
+      
+    },  
         }
     }
 </script>

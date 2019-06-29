@@ -264,6 +264,10 @@
         6.3“蓉E充充电”未行使或执行本服务协议所规定的任何权利或规定，不构成对前述权利之放弃。
         <br>
       </p>
+        <p style=" margin-left: 5%;margin-right: 5%;">
+        6.4客服热线: <span style="font-weight:bold"> 028-64791922</span>   
+        <br>
+      </p>
     </div>
     <div class="foot" >
       <div >

@@ -26,11 +26,11 @@
     </div>
     <scroller lock-x scrollbar-y :height="height">
       <div>
-        <flexbox v-for="(item,index) in searchArr" :key="index"  v-show="item.is_del==0" style="height:120px;color:#333333;">
-          <flexbox-item style="height:120px;position:relative">
+        <flexbox v-for="(item,index) in searchArr" :key="index"  v-show="item.is_del==0" style="height:120px;color:#333333;"  >
+          <flexbox-item style="height:120px;position:relative"  @click.native="ChargeMsg(item.id)">
             <div
               style="text-align:center;position:absolute;left:50%;top:50%;margin-top:-50px;margin-left:-50px"
-              @click="ChargeMsg(item.id)"
+            
             >
               <img
                 style="width:100px"
@@ -41,7 +41,7 @@
               >
             </div>
           </flexbox-item>
-          <flexbox-item style="margin-left:-0.4%">
+          <flexbox-item style="margin-left:-0.4%" @click.native="ChargeMsg(item.id)">
             <div style="width:500px">
               <span
                 style="font-size:14px;display:inline-block;width:156px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap"

@@ -1,5 +1,7 @@
 <template>
+   
   <!-- 充电站详情 -->
+  
   <scroller lock-x scrollbar-y :height="height">
     <div>
       <flexbox style="display:flex;justify-content:space-between">
@@ -50,11 +52,7 @@
       </flexbox>
       <divider></divider>
       <cell style="font-size:12px" title="注意" :border-intent="false">充电免费停车两小时，请向停车收费人员出示充电记录</cell>
-      <!--<v-chart :data="data" prevent-rende>
-                <v-scale x  :tick-count="3" mask="hh:mm" />
-                <v-tooltip :show-item-marker="false" show-x-value />
-                <v-line series-field="type" />
-      </v-chart>-->
+     
       <group>
         <cell title="电价" value></cell>
         <cell-form-preview :list="priceStr"></cell-form-preview>
@@ -63,39 +61,34 @@
       <cell style="font-size:12px" title="服务费" :border-intent="false">{{sprice}}元/度</cell>
       <cell style="font-size:12px" title="开放时间">00:00-24:00</cell>
       <divider></divider>
-      <!--<cell title="充电记录" inline-desc='已经有1位车主发布充电记录'>
-                <x-button plain mini type="primary" @click.native="gotoChargeList">前往查看</x-button>
-            </cell>
-            <swiper auto height="30px" direction="vertical" :interval=2000 class="text-scroll" :show-dots="false">
-                <swiper-item><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
-                <swiper-item><p>基本世神 兑换《传奇世界H5》畅玩级礼包 消耗30金币</p></swiper-item>
-                <swiper-item><p>零哥章魚 完成传奇世界H5-王者归来任务 获得30金币</p></swiper-item>
-                <swiper-item><p>做迎而為 兑换【饿了么】畅享美食红包 消耗20金币</p></swiper-item>
-                <swiper-item><p>只知道不知道 兑换【饿了么】畅享美食红包 消耗20金币</p></swiper-item>
-                <swiper-item><p>基本世神 兑换《传奇世界H5》畅玩级礼包 消耗30金币</p></swiper-item>
-      </swiper>-->
-
-      <!-- <ChargeTabbar class="bottomBtn"></ChargeTabbar> -->
+         
     </div>
+     
     <popup
       v-model="selectMap"
-      :show-mask="false"
+      :show-mask="true"
+      :modal-append-to-body="false"
       :hide-on-blur="true"
       style="background:#fff;position:absolute;bottom:0;width:100%;height:110px"
     >
-      <flexbox>
+      <flexbox  :append-to-body="true"
+      >
         <flexbox-item @click.native="NavigationGaode">
           <div class="flex-demo msgHeader">高德地图</div>
         </flexbox-item>
       </flexbox>
       <hr class="hrMargin border">
-      <flexbox>
+      <flexbox  :append-to-body="true"
+      >
         <flexbox-item @click.native="NavigationBaidu">
           <div class="flex-demo msgHeader">百度地图</div>
         </flexbox-item>
       </flexbox>
     </popup>
   </scroller>
+ 
+  
+
 </template>
     
 <script>
@@ -479,5 +472,13 @@ export default {
 }
 .msgBody{
   margin-left: 20%;
+}
+.msgHeader {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "serif";
+  margin-top: 10px;
+  margin-bottom: 6px;
 }
 </style>

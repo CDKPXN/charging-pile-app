@@ -46,7 +46,6 @@
         v-for="tmp in data"
         :key="tmp.id"
         :autoPan="true"
-       
         :position="{lng: tmp.longitude, lat: tmp.latitude}"
         :icon="{url: require('../../../static/site.svg'), size: {width: 31, height: 37.5}}"
         :dragging="false"
@@ -91,7 +90,7 @@
           </div>
           
           <div style="font-size:18px;font-weight:900px;color:#000000;margin-top:2%;">
-            <span>{{district}}{{name}}</span>
+            <span>{{name}}</span>
           </div>
           <div style="margin-top:4%;font-size:14px;">
             <span>
@@ -177,7 +176,7 @@
       <img src="../../assets/icons/noticeClose.png" class="imgClose" alt="关闭" @click="closeNotice">
     </div>
     <!-- 升级提示框 -->
-    <div v-transfer-dom>
+    <!-- <div v-transfer-dom>
       <x-dialog v-model="showHideOnBlur" class="dialog-demo" hide-on-blur id="upgrade_main">
         <div class="img-box">
           <img src="../../assets/images/upgrade.png" style="max-width:80%">
@@ -195,7 +194,7 @@
           <span class="vux-close close_dialog">x</span>
         </div>
       </x-dialog>
-    </div>
+    </div> -->
     <Tabbar />
      
   </div>
@@ -266,7 +265,7 @@ export default {
       region: "",
       distance: "",
       backClick: 0,
-      time: new Date(),
+      time: '',
       showtoast: false,
       // app升级提示框
       showHideOnBlur: false,
@@ -280,43 +279,72 @@ export default {
      
     };
   },
-  //设置缓存不让当前地图刷新
+//   // 设置缓存不让当前地图刷新
   beforeRouteEnter(to, from, next) { 
       if(from.name=='tabDetails'){
           to.meta.isBack=true;
+          console.log('缓存哦')        
           //判断是从哪个路由过来的，
           //如果是tabDetails过来的，表明当前页面不需要刷新获取新数据，直接用之前缓存的数据即可
       }
-  
       next();
     },
   activated() {
-    
   if(this.$route.meta.isBack){
     this.showPopup=true;
-    // 如果isBack是false，表明需要获取新数据，否则就不再请求，直接使用缓存的数据
-  
   }
-  // 恢复成默认的false，避免isBack一直是true，导致下次无法获取数据
-  this.$route.meta.isBack=false
-
+    this.init();
+  
+  this.$route.meta.isBack=false;
+  
 },
   created() {
+    this.init();
+  },
+  // beforeDestroy: function() {
+   
+  //   console.log("destroy");
     
+  // },
+  beforeRouteLeave(to,from,next){
+     clearInterval(this.timer);
+     document.removeEventListener("backbutton", this.EBackButton, false);
+     next();
+  },
+  updated() {
+  },
+  mounted() {
+    this.height = window.innerHeight;
+    let vm = this;
 
+    // if (navigator.geolocation){
+    //     navigator.geolocation.getCurrentPosition(function(position){
+    //         //onSuccees
+    //         //alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude)
+    //     } ,function(){
+    //         //onError
+    //         //alert("error!")
+    //     } ,{ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
+    // }else{
+    //     alert("不支持获取地理位置。")
+    // }
+  },
+  methods: {
+    init(){
+       console.log('进入了created')
     let vm = this;
     let arr = [];
     URL.token = sessionStorage.getItem("token");
     this.backClick = 0;
-
+    this.time=new Date(); 
     init();
     function init() {
     
-      setTimeout(function() {
+      // setTimeout(function() {
         document.addEventListener("backbutton", vm.EBackButton, false);
-      }, 1000);
+      // }, 1000);
       vm.GetMarker();
-      vm.getApp();
+      // vm.getApp();
       vm.getNotice();
     }
 
@@ -352,31 +380,7 @@ export default {
         }
       }
     });
-  },
-  beforeDestroy: function() {
-    clearInterval(this.timer);
-    console.log("destroy");
-    document.removeEventListener("backbutton", this.EBackButton, false);
-  },
-  updated() {
-  },
-  mounted() {
-    this.height = window.innerHeight;
-    let vm = this;
-
-    // if (navigator.geolocation){
-    //     navigator.geolocation.getCurrentPosition(function(position){
-    //         //onSuccees
-    //         //alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude)
-    //     } ,function(){
-    //         //onError
-    //         //alert("error!")
-    //     } ,{ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
-    // }else{
-    //     alert("不支持获取地理位置。")
-    // }
-  },
-  methods: {
+    },
     isAndroid() {
       var u = navigator.userAgent;
       var Android = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1; //g
@@ -447,12 +451,7 @@ export default {
       var geolocation = new BMap.Geolocation();
 
       geolocation.getCurrentPosition(
-        function(r) {
-          
-            // alert(JSON.stringify(r))
-          if( r.longitude==104.06792346&&r.latitude==30.67994285){
-            alert('请打开定位')
-          }else{
+        function(r) { 
           vm.center = { lng: r.longitude, lat: r.latitude }; // 设置center属性值
           vm.autoLocationPoint = { lng: r.longitude, lat: r.latitude }; // 自定义覆盖物
           vm.initLocation = true;
@@ -463,7 +462,7 @@ export default {
             "autoLocationPoint",
             JSON.stringify(vm.autoLocationPoint)
           );
-          }
+        
          
         },
         { enableHighAccuracy: true }
@@ -697,7 +696,7 @@ export default {
       return s;
     },
     EBackButton() {
-      if (location.hash == "#/home/bmapV") {
+     
         if (
           this.showPopup == false &&
           this.showLoading == false &&
@@ -708,9 +707,9 @@ export default {
             this.backClick = 0;
             navigator.app.exitApp(); // app退出
           } else {
+            this.showtoast = true; // 提示信息
             if (Date.parse(new Date()) - this.time < 2000) {
               // 小于2s,退出程序
-              this.showtoast = true; // 提示信息
               this.backClick++;
             } else {
               // 大于2s，重置时间戳，
@@ -723,14 +722,7 @@ export default {
           this.showLoading = false;
           this.selectMap = false;
         }
-        // this.showPopup = false
-        // this.showLoading = false
-        // this.selectMap = false
-      } else {
-        this.$router.push("/home/bmapV");
-      }
-
-      // sessionStorage.setItem('login',"setEBackButton")
+       
     },
     JumpComment() {
       this.$router.push("/chargeDetails/tabComment", {
@@ -755,14 +747,13 @@ export default {
       // })
     },
     GetMarker() {
-      
+     console.log('重新获取了点')
       this.$ajax({
         method: "get",
         url: "/app/chargingNet?page=1&size=5999"
       }).then(res => {
-        this.data=res.data.data.filter((item,index)=>{
-           return item.is_del==0
-        })
+        
+        this.data=res.data.data
         this.slb(this.data);
       });
     },
@@ -956,44 +947,44 @@ export default {
         }
       });
     },
-    // 获得app版本
-    getApp() {
+    // // 获得app版本
+    // getApp() {
       
-      let vm = this;
-      let upGrade = sessionStorage.getItem("upGrade");
-      // sessionStorage.removeItem("upGrade");
-      if (upGrade !== null) {
-        console.log("upGradeData=========" + upGrade);
-        return;
-      }
-      vm.$ajax({
-        method: "get",
-        url: "/app/version",
-        headers: { token: vm.token }
-      }).then(res => {      
-        if (res.data.code == 200) {
-          let data = res.data.data;
-          console.log("获取到的版本",data)
-          var serverVersion = parseInt(data.replace(/\./g, ""));
-          var locatVersion = parseInt(upGradeData.upGrade.replace(/\./g, ""));
-          console.log("服务器：" + serverVersion + ",app版本：" + locatVersion);
-          if (locatVersion < serverVersion) {
-            this.showHideOnBlur = true;
-            sessionStorage.setItem("upGrade", true);
-          } else {
-            this.showHideOnBlur = false;
-          }
-        }
-      });
-    },
+    //   let vm = this;
+    //   let upGrade = sessionStorage.getItem("upGrade");
+    //   // sessionStorage.removeItem("upGrade");
+    //   if (upGrade !== null) {
+    //     console.log("upGradeData=========" + upGrade);
+    //     return;
+    //   }
+    //   vm.$ajax({
+    //     method: "get",
+    //     url: "/app/version",
+    //     headers: { token: vm.token }
+    //   }).then(res => {      
+    //     if (res.data.code == 200) {
+    //       let data = res.data.data;
+    //       console.log("获取到的版本",data)
+    //       var serverVersion = parseInt(data.replace(/\./g, ""));
+    //       var locatVersion = parseInt(upGradeData.upGrade.replace(/\./g, ""));
+    //       console.log("服务器：" + serverVersion + ",app版本：" + locatVersion);
+    //       if (locatVersion < serverVersion) {
+    //         this.showHideOnBlur = true;
+    //         sessionStorage.setItem("upGrade", true);
+    //       } else {
+    //         this.showHideOnBlur = false;
+    //       }
+    //     }
+    //   });
+    // },
     // 升级App
-    upgradeApp() {
-      // 跳转到应用市场升级
+    // upgradeApp() {
+    //   // 跳转到应用市场升级
 
-      var url = "http://chargingpile.companiontek.com/appd/index.html";
-      window.location.href = url;
-      this.showHideOnBlur = false;
-    },
+    //   var url = "http://chargingpile.companiontek.com/appd/index.html";
+    //   window.location.href = url;
+    //   this.showHideOnBlur = false;
+    // },
     //获取公告列表
     getNotice() {
       let vm = this;

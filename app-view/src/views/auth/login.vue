@@ -229,7 +229,7 @@ export default {
               confirmText: "确认",
               showCancelButton: false,
               onConfirm() {
-                vm.$router.push("home/bmapV");
+                vm.$router.push("home/index");
               }
             });
           } else if (data.code == 2) {
@@ -335,7 +335,7 @@ export default {
             sessionStorage.setItem("name", vm.phone);
            localStorage.setItem("name", vm.phone);
             localStorage.setItem("token", res.data.data);
-            vm.$router.push("home/bmapV");
+            vm.$router.push("home/index");
           } else if (res.data.code == 400) {
             vm.toastShow.showCancel = true;
             vm.toastShow.cancel_msg = res.data.message;
