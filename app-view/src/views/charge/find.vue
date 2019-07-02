@@ -11,7 +11,30 @@
       ></x-icon>
       <span style="color:#fff">发现</span>
     </x-header>
-    功能开发中,敬请期待
+    <!-- tab -->
+    <tab :animate="false" active-color='#f05225' >
+      <tab-item selected @on-item-click='itemclick'>精选活动</tab-item>
+      <!-- <tab-item   @on-item-click='itemclick'>资讯</tab-item> -->
+      <!-- <tab-item  @on-item-click='itemclick'>全部订单</tab-item> -->
+    </tab>
+    <div style="position:relative" v-show="index==0">
+            <div style="position:absolute;margin-top:30%;left:50%;margin-left:-125px;">
+                <img src="../../assets/icons/No_record.png" width="250px" alt="">
+                <div style="text-align:center;margin-top:10%">
+                    <span style="color:#999999;font-size:14px">暂无更多活动</span>
+                </div>
+             
+            </div>
+    </div>
+      <div style="position:relative" v-show="index==1">
+            <div style="position:absolute;margin-top:30%;left:50%;margin-left:-125px;">
+                <img src="../../assets/icons/No_record.png" width="250px" alt="">
+                <div style="text-align:center;margin-top:10%">
+                    <span style="color:#999999;font-size:14px">暂无更多资讯</span>
+                </div>
+             
+            </div>
+    </div>              
     <tabbar />
      <toast position="bottom" type="text" v-model="showtoast">再按一次退出</toast>
      
@@ -19,18 +42,19 @@
 </template>
 
 <script>
-import {  XHeader,Toast} from 'vux'
+import {  XHeader,Toast,Tab,TabItem} from 'vux'
 import Tabbar from "../charge/components/tabbar.vue"
 
 export default {
     components:{
-       XHeader,Tabbar,Toast
+       XHeader,Tabbar,Toast,Tab,TabItem
     },
     data(){
         return {
               showtoast:false,
               backClick:0,
               time: new Date(),
+              index:''
         }
     },
     created(){
@@ -44,6 +68,9 @@ export default {
      document.removeEventListener("backbutton", this.EBackButton, false);
   },
     methods:{
+      itemclick(index){
+       this.index=index;
+      },
         jump(url){
            this.$router.push(url)
         },

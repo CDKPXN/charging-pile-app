@@ -63,28 +63,30 @@
       <divider></divider>
          
     </div>
-     
+    <div > 
     <popup
       v-model="selectMap"
       :show-mask="true"
       :modal-append-to-body="false"
       :hide-on-blur="true"
+       v-transfer-dom
       style="background:#fff;position:absolute;bottom:0;width:100%;height:110px"
     >
-      <flexbox  :append-to-body="true"
+      <flexbox 
       >
         <flexbox-item @click.native="NavigationGaode">
           <div class="flex-demo msgHeader">高德地图</div>
         </flexbox-item>
       </flexbox>
       <hr class="hrMargin border">
-      <flexbox  :append-to-body="true"
+      <flexbox  
       >
         <flexbox-item @click.native="NavigationBaidu">
           <div class="flex-demo msgHeader">百度地图</div>
         </flexbox-item>
       </flexbox>
     </popup>
+    </div>
   </scroller>
  
   
@@ -110,13 +112,17 @@ import {
   VScale,
   CellFormPreview,
   Scroller,
-  Popup
+  Popup,
+  TransferDom
 } from "vux";
 import ChargeTabbar from "./components/chargeTabbar";
 import url from "../../config/url.js";
 import axios from "axios";
 export default {
   name: "TabDetails",
+   directives: {
+    TransferDom
+  },
   components: {
     Cell,
     Group,
@@ -136,7 +142,8 @@ export default {
     VScale,
     CellFormPreview,
     Scroller,
-    Popup
+    Popup,
+    
   },
   data() {
     return {
@@ -156,7 +163,7 @@ export default {
       center: { lng: 0, lat: 0 },
       distance: "",
       autoLocationPoint: { lng: 0, lat: 0 },
-      src:url.LOCALSRC+'/'+'no_img.jpg'
+      src:url.LOCALSRC+'/'+'no_img.jpg',
     };
   },
   watch: {

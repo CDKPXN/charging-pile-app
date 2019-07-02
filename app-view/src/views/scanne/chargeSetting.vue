@@ -25,7 +25,7 @@
       </popup-radio>
     </group>
 
-    <flexbox style="margin-top:40px;">
+    <!-- <flexbox style="margin-top:40px;">
             <flexbox-item style="text-align:center">
                 <img src="../../assets/gif/s.png" style="height:40%;width:40%;border-radius:100%;" @click="takeLine"/>
             </flexbox-item>
@@ -37,7 +37,7 @@
         </flexbox>
 
         <x-button type="primary" class="bottomBtn" @click.native="startCharge" disabled v-show="showStartBtn">提交</x-button>
-    <x-button type="primary" class="bottomBtn" @click.native="startCharge" v-show="showStartBtn">提交</x-button>
+    <x-button type="primary" class="bottomBtn" @click.native="startCharge" v-show="showStartBtn">提交</x-button> -->
     <x-button
       type="primary"
       class="bottomBtn xButton"

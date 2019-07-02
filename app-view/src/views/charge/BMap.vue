@@ -135,7 +135,7 @@
 
       <popup
         v-model="selectMap"
-        :show-mask="false"
+        :show-mask="true"
         :hide-on-blur="true"
         height="110px"
         position="bottom"
