@@ -8,16 +8,16 @@
         style="position:absolute;left:14px;top:14px"
         @click.native="back"
       ></x-icon>
-      <span    style="color:#000">充电设置</span>
+      <span    style="color:#fff">充电设置</span>
     </x-header>
 
     <group>
       <popup-radio title="充电设置方式" :options="options1" v-model="option1">
-        <p slot="popup-header" class="vux-1px-b demo3-slot" style="text-align:center">请选则充电类型</p>
+        <p slot="popup-header" class="vux-1px-b demo3-slot" style="text-align:center">请选择充电类型</p>
       </popup-radio>
 
       <popup-radio title="充电类型" :options="options3" v-model="option3" v-show="setPhone">
-        <p slot="popup-header" class="vux-1px-b demo3-slot" style="text-align:center">请选则充电类型</p>
+        <p slot="popup-header" class="vux-1px-b demo3-slot" style="text-align:center">请选择充电类型</p>
       </popup-radio>
 
       <popup-radio :title="typeTitle" :options="options4" v-model="option4" v-show="showTimer">
@@ -120,21 +120,25 @@ export default {
     let _chargeId = this.$route.query.chargeId;
     //测试代码一行
     // let _chargeId = "hlht://1.123456789/qrcode";
-
-    if (_chargeId == undefined) {
-      this.jump("/home/bmapV");
-      return;
-    }
+    // alert('eeee'+_chargeId) 
+    // if (_chargeId== undefined) {
+    //   this.jump("/home/bmapV");
+    //   return;
+    // }
     this.token = localStorage.getItem("token");
     this.option1 = "手机设置";
     this.option3 = "自动充满";
-    if (_chargeId.length <= 6) {
+    
+    if (_chargeId.length> 0) {
       localStorage.removeItem("platform");
       this.getQrCode();
-    } else {
-      localStorage.setItem("platform", "tled");
-      this.platformQrcode();
+       
     }
+    //  else {
+    //   localStorage.setItem("platform", "tled");
+    //   this.platformQrcode();
+    
+    // }
   },
   watch: {
     option1(val) {
@@ -284,9 +288,12 @@ export default {
           pid: vm.pid
         }
       }).then(res => {
-        console.log(res);
         if (res.data.code == 200) {
           vm.showLoading = false;
+          vm.showSuccess = true;
+          setTimeout(function() {
+            vm.jump("/home/user/order");
+          }, 1000); vm.showLoading = false;
           vm.showSuccess = true;
           setTimeout(function() {
             vm.jump("/home/user/order");
@@ -318,6 +325,7 @@ export default {
         console.log("======================");
         console.log(res);
         if (res.data.code == 200) {
+
         } else {
           vm.$vux.confirm.show({
             title: "提示",
@@ -339,7 +347,7 @@ export default {
         url: "app/charging/qrCode?qrCode=" + this.$route.query.chargeId,
         headers: { token: vm.token }
       }).then(res => {
-        console.log(res);
+        console.log('ddd',res);
         if (res.data.code == 200) {
           vm.pid = res.data.data.pid;
           if (vm.pid == undefined) {

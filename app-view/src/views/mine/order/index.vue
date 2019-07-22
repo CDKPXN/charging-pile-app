@@ -20,7 +20,7 @@
     <div class="pileBgColor" :style="{height:height+'px'}">
       <div class="titleMsg">{{sname}} | {{pname}}</div>
       <div>
-        <v-chart id="qqqqq" ref="demo" prevent-render @on-render="renderChart"></v-chart>
+        <v-chart  ref="demo" prevent-render @on-render="renderChart"></v-chart>
       </div>
       <div class="container">
         <div class="msgCard">
@@ -29,7 +29,7 @@
         </div>
         <div class="msgCard">
           <span class="num">{{duration}}分钟</span>
-          <span class="info">充电时间</span>
+          
         </div>
         <div class="msgCard">
           <span class="num">{{cost}}元</span>
@@ -97,6 +97,7 @@ export default {
   beforeDestroy: function() {
     console.log("order statu destroy");
     clearInterval(this.refresh);
+     this.$vux.loading.hide();
   },
   
 watch:{
@@ -118,6 +119,7 @@ watch:{
     }
   }
   ,
+  
   created() {
     this.token = sessionStorage.getItem("token");
     if (sessionStorage.getItem("token") == null) {
@@ -150,6 +152,7 @@ vm.refreshOrderStatus()
       clearInterval(this.refresh);
       this.$router.push(path);
     },
+    
     stopChargeMine(){
       //自己平台停止充电
       console.log("自己平台停止充电");
@@ -209,12 +212,12 @@ vm.refreshOrderStatus()
     ,
     stopCharge() {
       let flag = localStorage.getItem("platform");
-      if (flag == "tled") {
-        this.stopChargePlatform();
-      }else{
-        this.stopChargeMine();
-      }
-    
+      // if (flag == "tled") {
+      //   this.stopChargePlatform();
+      // }else{
+      //   this.stopChargeMine();
+      // }
+    this.stopChargeMine();
     },
     platformRefreshOrder() {
       console.log("请求平台刷新订单")

@@ -22,17 +22,18 @@
             <flexbox-item>
                 <div class="flex-demo" style="width:92%;margin:0 auto">
                     <div>
-                        <x-button type="primary" class="success_btn success_con"  @click.native="submit_ver">提交</x-button>
+                        <x-button  class="success_btn success_con"  @click.native="submit_ver">提交</x-button>
                     </div>
                 </div>
             </flexbox-item>
         </flexbox>
+        <toast v-model="show" type="text">{{message}}</toast>
     </div>
 </template>
 
 <script>
 import $ from 'jquery';
-import { XHeader, Flexbox, FlexboxItem, XInput, XButton,} from 'vux'
+import { XHeader, Flexbox, FlexboxItem, XInput, XButton,Toast} from 'vux'
     export default {
         components: {
             XHeader,
@@ -40,6 +41,7 @@ import { XHeader, Flexbox, FlexboxItem, XInput, XButton,} from 'vux'
             FlexboxItem,
             XInput,
             XButton,
+            Toast
         },
         data () {
             return {
@@ -47,6 +49,8 @@ import { XHeader, Flexbox, FlexboxItem, XInput, XButton,} from 'vux'
                 // 重新发票提交内容
                 invoice_djhm:'',
                 invoice_email:'',
+                show:false,
+                message:''
             }
         },
         created () {
@@ -89,6 +93,9 @@ import { XHeader, Flexbox, FlexboxItem, XInput, XButton,} from 'vux'
                         if(res.data.code == 200){
                              console.log("提交成功")
                             vm.$router.push({path:'/home/invoice/invoiceSuccess'})
+                        }else{
+                           this.show=true;
+                           this.message=res.data.message;
                         }
                     })
                 }else{
@@ -117,5 +124,6 @@ import { XHeader, Flexbox, FlexboxItem, XInput, XButton,} from 'vux'
     } 
     .success_btn{
         background-color: @background-color;
+        color: #fff;
     }
 </style>

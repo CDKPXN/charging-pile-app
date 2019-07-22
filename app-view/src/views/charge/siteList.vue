@@ -2,9 +2,9 @@
   <div>
     <div class="user_main_content" style="height:50px">
       <img src="../../assets/icons/user_new.png" class="user_main_img" @click="GoMine" alt>
-      <div style="width:70%;position:relative; margin-left: 16%;">
-        <div>
-          <search
+      <div style="width:70%;position:relative; margin-left: 16%;height: 100%;line-height: 50px;">
+       
+          <!-- <search
             id="ww"
             v-model="searchSite"
             ref="search"
@@ -13,8 +13,10 @@
             cancel-text=" "
             :auto-fixed="false"
             style="width:90%"
-          ></search>
-        </div>
+          ></search> -->
+             <icon type="search" style="position:absolute;left:8px;top:18px;"></icon>
+             <input type="text"  placeholder="输入目的地或充电站"   style="height:28px;border-radius:24px;border:0px;width:80%;padding-left:30px;" v-model="value" @click="jump('/home/SiteListV')">
+        
       </div>
       <img
         src="../../assets/icons/map1.png"
@@ -124,7 +126,8 @@ import {
   FlexboxItem,
   Popup,
   Search,
-  XInput
+  XInput,
+  Icon
 } from "vux";
 import axios from "axios";
 export default {
@@ -138,7 +141,8 @@ export default {
     FlexboxItem,
     Popup,
     Search,
-    XInput
+    XInput,
+    Icon
   },
   data() {
     return {
@@ -151,15 +155,16 @@ export default {
       height: "",
       searchSite: "",
       searchArr: [],
-      src:''
+      src:'',
+      value:''
       
     };
   },
   watch: {
-    searchSite(val) {
+    value( ) {
       let vm = this;
       vm.searchArr = [];
-      var reg = new RegExp(val, "g");
+      var reg = new RegExp(this.value, "g");
       this.data.map(m => {
         var nameFilter = reg.test(m.name);
         var addrFilter = reg.test(m.addr);
@@ -491,6 +496,9 @@ export default {
 };
 </script>
 <style lang="less"scoped>
+ input::-webkit-input-placeholder {
+   text-align: center;
+   }
 .user_main_img {
   width: 20px;
   height: 20px;

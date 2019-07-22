@@ -1,15 +1,17 @@
 <template>
     <div>
         <div style="height:44px;display:flex;background-color:#f05225">
-               <p  style="height:100%;line-height: 44px;width:12%;margin-left: 30px; margin-right: 10px;text-align: center; " class="nav-bar-font" >成都</p>
-               <div  style="width:70%;position:relative">
-                   <search
+               <p  style="height:100%;line-height: 44px;width:12%;margin-left: 10px; margin-right: 10px;text-align: center; " class="nav-bar-font" >成都</p>
+               <div  style="width:70%;position:relative;line-height: 44px;">
+                   <!-- <search
                      v-model="value"
                       ref="search"
                       placeholder="输入目的地或充电站"
                       @on-focus="jump('/home/SiteListV')"
                       >
-                  </search>
+                  </search> -->
+                   <icon type="search" style="position:absolute;left:8px;top:16px;"></icon>
+                  <input type="text"  placeholder="输入目的地或充电站"   style="height:28px;border-radius:24px;border:0px;width:80%;" v-model="value" @click="jump('/home/SiteListV')">
                </div>      
         </div>
         <scroller  lock-x scrollbar-y :height="height">   
@@ -72,7 +74,7 @@
 </template>
 
 <script>
-import { Scroller,Search,XDialog,TransferDom, Toast} from 'vux'
+import { Scroller,Search,XDialog,TransferDom, Toast,Icon} from 'vux'
 import Tabbar from "../charge/components/tabbar.vue"
 import url from "../../config/url.js"
 import upGradeData from "../../config/upGrade.js"; // 版本号js
@@ -85,7 +87,8 @@ export default {
      Tabbar, 
      Search,
      XDialog,
-      Toast
+      Toast,
+      Icon
   },
     mounted () {
             let Height = window.innerHeight-10
@@ -151,6 +154,7 @@ export default {
               jump (url) {
                 this.$router.push(url)
             },
+   
     EBackButton() {
           if (this.backClick > 0 && Date.parse(new Date()) - this.time < 2000) {
             // 不为0时
@@ -248,21 +252,24 @@ export default {
  .vux-search-box{
      right:0px;
  }
+ input::-webkit-input-placeholder {
+   text-align: center;
+   }
 </style>
 <style>
 .weui-tabbar__icon{
-     width: 40px;
-     height: 40px;
+     /* width: 40px;
+     height: 40px; */
  }
  .weui-search-bar{
-     background-color:  #f05225 !important;
+     /* background-color:  #f05225 !important; */
  }
  .weui-search-bar__label{
      /* border-radius: 20px !important; */
-     background-color: #EFEFF4 !important;
+     /* background-color: #fff !important; */
  }
  .vux-search-fixed{
-     left:20% !important;
+     /* left:20% !important; */
  }
  .weui-search-bar:before{
      border: none !important;

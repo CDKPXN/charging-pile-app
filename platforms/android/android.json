@@ -34,7 +34,7 @@
           "LSApplicationQueriesSchemes": [
             {
               "xml": "<array><string>iosamap</string><string>baidumap</string></array>",
-              "count": 55
+              "count": 67
             }
           ]
         }

@@ -22,8 +22,7 @@
         <img  style="width:30px;height:30px" slot="icon-active" src="../../../assets/map.png">
         <span slot="label">地图</span>
       </tabbar-item>
-
-
+      
       <tabbar-item link="/home/mineV"  :selected="$route.path=='/home/mineV'">    
         <img  style="width:30px;height:30px" slot="icon" src="../../../assets/my1.png">
          <img  style="width:30px;height:30px" slot="icon-active" src="../../../assets/my.png">
@@ -97,6 +96,7 @@ export default {
               }
             );
           } else if (res.data.code == 200) {
+            
             console.log(res.data);
             vm.$router.push("/home/user/order");
           }

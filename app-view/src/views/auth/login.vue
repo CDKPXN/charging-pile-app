@@ -17,7 +17,7 @@
       >
         <img   style="width:80px;height:80px;"   src="../../assets/logo1.png" alt>
       </div>
-      <x-input style="font-size:16px;margin-top:80px" v-model="phone" placeholder="请输入您的手机号">
+      <x-input style="font-size:16px;margin-top:80px" v-model="phone" placeholder="请输入您的手机号"  type='tel' is-type="china-mobile" >
         <img
           slot="label"
           style="padding-right:10px;display:block;"
