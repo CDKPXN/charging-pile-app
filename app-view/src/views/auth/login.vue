@@ -319,7 +319,8 @@ export default {
     NewLogin() {
       // 登录
       let vm = this;
-      vm.$ajax({
+      if(vm.passWord.trim()&&vm.phone.trim()!==''){
+           vm.$ajax({
         method: "post",
         url: "/app/auth",
         data: {
@@ -341,12 +342,15 @@ export default {
             vm.toastShow.cancel_msg = res.data.message;
           } else {
             vm.toastShow.showCancel = true;
-            vm.toastShow.cancel_msg = "内部错误";
+            vm.toastShow.cancel_msg = "用户名或密码错误";
           }
         })
-        .catch(err => {
-          console.log(err);
-        });
+      
+      }else{
+        vm.toastShow.showCancel = true;
+        vm.toastShow.cancel_msg = "请输入用户名和密码";
+      }
+     
     }
   }
 };

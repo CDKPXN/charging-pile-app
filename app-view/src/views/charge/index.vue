@@ -57,9 +57,10 @@
           <img src="../../assets/images/upgrade.png" style="max-width:80%;">
           <div id="upgrade_content">
             <p>升级到新版本！</p>
-            <p>1.修复了若干bug</p>
+            <!-- <p>1.修复了若干bug</p>
             <p>2.增加公告栏</p>
-            <p>3.适配更多机型，优化若干细节</p>
+            <p>3.适配更多机型，优化若干细节</p> -->
+            <p  v-for="item in updateData">{{item}}</p>
           </div>
           <div id="upgrade_btn">
             <button @click="upgradeApp">立即升级</button>
@@ -110,11 +111,17 @@ export default {
               showtoast:false,
               backClick:0,
               time: new Date(),
-             
+              updateData:[],  
             }
         },
         created(){
        let vm=this;
+         vm.$ajax({
+              method:'get',
+              url:"upload.json",
+               }).then(res=>{
+                    this.updateData=res.data
+                })
        vm.$ajax({
               method:'get',
               url:"/file/record/1",
