@@ -20,6 +20,8 @@
         <p slot="popup-header" class="vux-1px-b demo3-slot" style="text-align:center">请选择充电类型</p>
       </popup-radio>
 
+      
+
       <popup-radio :title="typeTitle" :options="options4" v-model="option4" v-show="showTimer">
         <p slot="popup-header" class="vux-1px-b demo3-slot" style="text-align:center">{{radioMsg}}</p>
       </popup-radio>

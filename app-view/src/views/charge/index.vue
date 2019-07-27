@@ -8,6 +8,7 @@
                       ref="search"
                       placeholder="输入目的地或充电站"
                       @on-focus="jump('/home/SiteListV')"
+                      
                       >
                   </search> -->
                    <icon type="search" style="position:absolute;left:8px;top:16px;"></icon>
