@@ -3,13 +3,14 @@
         <div>
             <div v-for="tmp in chargeStatic" style="height:100px;border-bottom:1px solid #cccccc">
                 <div class="tabStatic">
-                    <img src="../../assets/icons/Idle.png" v-if="tmp.status==0" alt="">
+                <img src="../../assets/icons/Idle.png" v-if="tmp.status==0" alt="">
                     <img src="../../assets/icons/Idle.png" class="" v-if="tmp.status==1" alt="">
                     <img src="../../assets/icons/Idle.png" v-if="tmp.status==2" palt="">
                     <img src="../../assets/icons/charging.png" v-if="tmp.status==3" alt="">
-                    <img src="../../assets/icons/fault.png" v-if="tmp.status==4" alt="">
+                    <img src="../../assets/icons/fault.png" v-if="tmp.status==4&&tmp.fid!=='Disconnection'" alt="">
+                     <img src="../../assets/icons/lixian.png" v-if="tmp.status==4&&tmp.fid=='Disconnection'" alt="">
                     <img src="../../assets/icons/locking.png" v-if="tmp.status==5" alt="">
-                    <img src="../../assets/icons/Idle.png" v-if="tmp.status==6" alt="">
+                    <img src="../../assets/icons/Idle.png" v-if="tmp.status==6" alt="">                  
                 </div>
                 <div style="height:100px;position:relative">
                     <div class="static_Content">
@@ -45,21 +46,21 @@
             this.height =Height+'px'
         },
         created () {
-            let vm = this
+            let vm = this;
             vm.$ajax({
                 method:"get",
                 url:'/api/pile/site/'+this.$route.query.id+'?page=1&size=100',
             })
             .then(res=>{
-                console.log('狀態：')
-                console.log(res)
+                // console.log('狀態：')
+                // console.log(res)
                 if(res.data.code==200){
                     vm.chargeStatic = res.data.data.list
                     console.log(res.data.data.list)
                 }
-                console.log(666)
-                console.log(vm.chargeStatic)
-                console.log(666)
+                // console.log(666)
+                // console.log(vm.chargeStatic)
+                // console.log(666)
             })
         }
     }

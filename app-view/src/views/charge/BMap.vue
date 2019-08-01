@@ -157,7 +157,7 @@
     </div>
 
     <toast position="bottom" type="text" v-model="showtoast">再按一次退出</toast>
-
+      <toast v-model="showtoast2" position="bottom" type="text">定位中,请稍等</toast>
     <!-- 公告 -->
     <div v-if="noticeShow" class="NoticeBox">
       <img src="../../assets/icons/notice.png" class="imgNotice" alt="通知">
@@ -276,7 +276,7 @@ export default {
       refresh: "",
       geolocationIco: {},
       show:false,
-     
+      showtoast2:false
     };
   },
 //   // 设置缓存不让当前地图刷新
@@ -565,7 +565,6 @@ export default {
           vm.chargeId = data.id;
           vm.showPopup = true;
           vm.showLoading = false;
-          console.log("juli");
           var distance = vm.GetDistance(
             vm.center.lat,
             vm.center.lng,
@@ -878,10 +877,15 @@ export default {
     },
     // 跳转到电站列表
     GoSiteList() {
-      let dataStr = JSON.stringify(this.autoLocationPoint); // JSON对象转JSON字符串
+      if(sessionStorage.getItem("autoLocationPoint")!==null){
+             let dataStr = JSON.stringify(this.autoLocationPoint); // JSON对象转JSON字符串
       this.$router.push({
         path: "/home/SiteListV"
       });
+      }else{
+          this.showtoast2=true; 
+      }
+ 
     },
     //扫码充电
     Scanning() {

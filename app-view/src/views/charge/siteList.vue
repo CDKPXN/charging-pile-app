@@ -110,6 +110,7 @@
         </flexbox-item>
       </flexbox>
     </popup>
+  
   </div>
 </template>
 <script>
@@ -127,7 +128,8 @@ import {
   Popup,
   Search,
   XInput,
-  Icon
+  Icon,
+  Toast
 } from "vux";
 import axios from "axios";
 export default {
@@ -142,7 +144,8 @@ export default {
     Popup,
     Search,
     XInput,
-    Icon
+    Icon,
+    Toast
   },
   data() {
     return {
@@ -156,7 +159,7 @@ export default {
       searchSite: "",
       searchArr: [],
       src:'',
-      value:''
+      value:'',
       
     };
   },
@@ -448,12 +451,12 @@ export default {
             }else{
                item.src=url.LOCALSRC+'/'+'no_img.jpg';
             }
-           
             var distance = vm.GetDistance(
               vm.center.lat,
               vm.center.lng,
               vm.autoLocationPoint.lat,
               vm.autoLocationPoint.lng
+              
             );
             vm.distance = distance.toFixed(2);
             item.distance = vm.distance;
@@ -488,10 +491,11 @@ export default {
   },
   created() {
     let vm = this;
-    vm.autoLocationPoint = eval(
+       vm.autoLocationPoint = eval(
       "(" + sessionStorage.getItem("autoLocationPoint") + ")"
     ); // JSON字符串转JSON对象
-    vm.getSiteList();
+    vm.getSiteList(); 
+  
   }
 };
 </script>
