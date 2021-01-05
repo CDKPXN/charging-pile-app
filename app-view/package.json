@@ -10,7 +10,7 @@
     "txy": "node build/dev-server.js"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "cordova": "^8.1.2",
     "fastclick": "^1.0.6",
     "jquery": "^3.3.1",
